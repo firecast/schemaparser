@@ -10,3 +10,8 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+.vscode2
+
+# Exclude gRPC Protobuf compiled files
+**/*.pb.go
