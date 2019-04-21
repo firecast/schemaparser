@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "github.com/firecast/schemaparser/protobufs";
+
+package schemaparser;
+
+import "types/thing/product.proto";
+
+message ParserRequest {
+    string url = 1;
+}
+
+service SchemaParser {
+    rpc getSchemaForURL (ParserRequest) returns (thing.Product);
+}

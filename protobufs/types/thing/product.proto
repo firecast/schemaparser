@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package thing;
+option go_package = "github.com/firecast/schemaparser/protobufs/types/thing";
+
+message Product {
+    string identifier = 1;
+    string name = 2;
+    string description = 3;
+    string url = 4;
+    string logo = 5;
+    string aggregateRating = 6;
+    string award = 7;
+    string brand = 8;
+    string manufacturer = 9;
+    string model = 10;
+    string sku = 11;
+}
